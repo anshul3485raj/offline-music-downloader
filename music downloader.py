@@ -2,8 +2,7 @@ from youtube_dl import YoutubeDL
 from requests import get
 import pyttsx3
 import speech_recognition as sr
-from PyDictionary import PyDictionary
-dictionary = PyDictionary()
+
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
